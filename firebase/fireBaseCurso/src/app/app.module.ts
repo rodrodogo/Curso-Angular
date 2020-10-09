@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { ListaComponent } from './components/lista/lista.component';
 import { ListaAddComponent } from './components/lista-add/lista-add.component';
 
+import {FormsModule} from '@Angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { ListaAddComponent } from './components/lista-add/lista-add.component';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule 
   ],
   providers: [ConexionService],
   bootstrap: [AppComponent]

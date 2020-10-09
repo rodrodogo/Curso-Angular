@@ -29,4 +29,8 @@ export class ConexionService {
   listaItem(){
     return this.item;
   }
+
+  agregarItem(item: Item) {
+    this.itemDoc.add(item);
+  }
 }
