@@ -1,0 +1,82 @@
+<div class="container">
+  <app-cabecera></app-cabecera><!--Estatico-->
+
+  <router-outlet></router-outlet><!--Dinamico-->
+
+  <app-footer></app-footer><!--Estatico-->
+</div>
+
+
+  
+  <!--
+
+  <h1 class="container bg-dark text-white text-center my-4 py-4">Contador  {{contador}}
+  </h1>
+  <div class="container">
+  -->
+  <!--Tarea de contadores
+  <button class="btn btn-dark" (click) = "contador = contador + 5" >contador positivo</button>  
+  <button class="btn btn-warning" (click) = "contador  = contador - 5">Hola mundo</button>
+  <button class="btn btn-danger" *ngIf="contador >= 15">Hola mundo</button>
+  <button class="btn btn-danger" *ngIf="contador <= -10">Adiós</button>
+  -->
+
+  <!--
+  <ul>
+    <li *ngFor="let curso of cursos">{{curso}}</li>
+  </ul>  
+
+    <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">TIPO</th>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">EDAD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let animal of animales; index as i">
+        <th scope="row">{{i+1}}</th>
+        <td scope="row">{{animal.tipo}}</td>
+        <td scope="row">{{animal.nombre}}</td>
+        <td scope="row">{{animal.edad}}</td>
+      </tr>
+    </tbody>
+  </table>
+  -->  
+  
+
+
+
+  <!--
+    clase de bootstrap d-none para ocultar 
+    el ng-class modifica las clases css dinamicamente 
+
+    <button class="btn btn-dark mb-3" (click) = "activo = 'primero'" >Acción 1 </button>
+    <button class="btn btn-danger mb-3" (click) = "activo = 'segundo'">Acción 2</button>
+
+
+    <p class="text-info d-none" [ngClass]="{'d-block':activo == 'primero'}">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur inventore facilis libero, perferendis possimus mollitia sapiente praesentium doloremque aperiam velit ullam perspiciatis explicabo aut totam amet fuga, nemo reiciendis enim?</p>
+    <p class ="text-danger d-none" [ngClass]="{'d-block':activo == 'segundo'}">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quam esse labore sed quae eum, voluptas, debitis quia veritatis quis tempora nemo fugiat maiores impedit voluptates dolorem eos obcaecati facere!
+      </p>
+  
+  -->
+
+  <!--clase en la que se usa la directiva ng-if y ng-else, son usadas con un ng-template que muestar el contenido
+    cuando la vandera sea verdadera
+    sobre escribe el metodo del boton por medio de (click)
+    <button class="btn btn-warning" (click) = "show = !show">Acción</button>
+  <p class="text-info" *ngIf="show; else showDos ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur inventore facilis libero, perferendis possimus mollitia sapiente praesentium doloremque aperiam velit ullam perspiciatis explicabo aut totam amet fuga, nemo reiciendis enim?</p>
+
+  <ng-template #showDos>
+      <p class ="text-danger">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quam esse labore sed quae eum, voluptas, debitis quia veritatis quis tempora nemo fugiat maiores impedit voluptates dolorem eos obcaecati facere!
+        </p>
+  </ng-template>
+
+  -->
+   <!--
+</div>
+  -->
