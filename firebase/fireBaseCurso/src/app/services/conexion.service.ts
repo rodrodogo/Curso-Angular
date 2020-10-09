@@ -41,4 +41,9 @@ export class ConexionService {
     this.itemDocc.delete();
   }
 
+  editarItem(item){
+    this.itemDocc = this.afs.doc<Item>('items/'+item.id);
+    this.itemDocc.update(item);
+  }
+
 }
